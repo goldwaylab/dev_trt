@@ -1,0 +1,7 @@
+task,model,parameter,r_true_recovered,mean_bias,coverage95_true_in_refit,coverage50_true_in_refit,n_subjects,sampling_mode,true_param_sampling
+RISK,risk_valence_asymmetry,b1,0.9248356922984835,0.020528353739999977,0.956,0.502,500,posterior,independent
+RISK,risk_valence_asymmetry,a1,0.558645667037875,-0.0029793954600000052,0.948,0.508,500,posterior,independent
+RISK,risk_valence_asymmetry,a2,0.7281534626142753,0.0036380917931999996,0.922,0.466,500,posterior,independent
+RISK,risk_valence_asymmetry,a3,0.6260871863190202,-0.0015923907754000002,0.938,0.51,500,posterior,independent
+RISK,risk_valence_asymmetry,a4,0.7441294355892036,0.0010472182699999984,0.936,0.506,500,posterior,independent
+RISK,risk_valence_asymmetry,q0,0.9033717751753512,-0.010725590819999997,0.972,0.508,500,posterior,independent

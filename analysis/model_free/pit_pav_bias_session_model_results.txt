@@ -1,0 +1,13 @@
+=============================================================
+ PIT Pavlovian bias mixed model (processed CSV pipeline)
+ PavBias = mean(RewInv, PunSupp); GW accuracy exclusion < 0.55 
+ Model: PavBias ~ z_age * session + (1 | participantId)
+=============================================================
+
+Participants (both sessions, post-exclusion): 151 
+GW accuracy exclusions: 4 
+
+         Effect        df         F p.value
+1         z_age 1, 149.57      2.54    .113
+2       session 1, 149.01 15.36 ***   <.001
+3 z_age:session 1, 149.02      0.01    .937

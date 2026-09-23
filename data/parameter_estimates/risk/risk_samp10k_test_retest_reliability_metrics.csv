@@ -1,0 +1,31 @@
+task,model,metric_type,parameter,parameter_label,age_group,n,pearson_r,pearson_ci_lo,pearson_ci_hi,spearman_rho,spearman_p,interaction_t,interaction_p
+RISK,risk_valence_asymmetry_samp10k,overall,a1,"Learning Rate (chosen, +PE)",NA,159,0.6271609632642229,0.5225199888578598,0.7131895643037067,0.6131683065682648,8.602653322526525e-18,NA,NA
+RISK,risk_valence_asymmetry_samp10k,overall,a2,"Learning Rate (chosen, -PE)",NA,159,0.6286078569913781,0.5242542373966249,0.7143612092173723,0.5968167722146553,1.0235734424583631e-16,NA,NA
+RISK,risk_valence_asymmetry_samp10k,overall,a3,"Learning Rate (unchosen, +PE)",NA,159,0.6572058089294803,0.5587103372737632,0.7374206051828238,0.6629846129969948,1.7322425477348725e-21,NA,NA
+RISK,risk_valence_asymmetry_samp10k,overall,a4,"Learning Rate (unchosen, -PE)",NA,159,0.8269430293177362,0.7704631974148534,0.8705416287512876,0.8153317958248433,4.2699865061441825e-39,NA,NA
+RISK,risk_valence_asymmetry_samp10k,overall,b1,Inverse Temperature,NA,159,0.7982802868401401,0.7338089068390059,0.8485011449304113,0.802025023958156,5.737746157167701e-37,NA,NA
+RISK,risk_valence_asymmetry_samp10k,overall,q0,Initial Q-value (q0),NA,159,0.7801139969111013,0.7107703475013415,0.8344412124989256,0.7549157098962648,1.4412643338809785e-30,NA,NA
+RISK,risk_valence_asymmetry_samp10k,by_age,a1,"Learning Rate (chosen, +PE)",10-15,57,0.4516847642010542,NA,NA,0.41411718952553805,NA,NA,NA
+RISK,risk_valence_asymmetry_samp10k,by_age,a1,"Learning Rate (chosen, +PE)",15-20,45,0.7144517491993011,NA,NA,0.6914361001317522,NA,NA,NA
+RISK,risk_valence_asymmetry_samp10k,by_age,a1,"Learning Rate (chosen, +PE)",20-25,57,0.6987198368079922,NA,NA,0.7324139943597452,NA,NA,NA
+RISK,risk_valence_asymmetry_samp10k,by_age,a2,"Learning Rate (chosen, -PE)",10-15,57,0.6855546248751911,NA,NA,0.6398755509463314,NA,NA,NA
+RISK,risk_valence_asymmetry_samp10k,by_age,a2,"Learning Rate (chosen, -PE)",15-20,45,0.6521189681066499,NA,NA,0.6227477851792349,NA,NA,NA
+RISK,risk_valence_asymmetry_samp10k,by_age,a2,"Learning Rate (chosen, -PE)",20-25,57,0.5208824083307381,NA,NA,0.5005590576081359,NA,NA,NA
+RISK,risk_valence_asymmetry_samp10k,by_age,a3,"Learning Rate (unchosen, +PE)",10-15,57,0.6989793670438901,NA,NA,0.7399533316048744,NA,NA,NA
+RISK,risk_valence_asymmetry_samp10k,by_age,a3,"Learning Rate (unchosen, +PE)",15-20,45,0.6402425623253856,NA,NA,0.6314645247249882,NA,NA,NA
+RISK,risk_valence_asymmetry_samp10k,by_age,a3,"Learning Rate (unchosen, +PE)",20-25,57,0.6293308162763472,NA,NA,0.631708581799326,NA,NA,NA
+RISK,risk_valence_asymmetry_samp10k,by_age,a4,"Learning Rate (unchosen, -PE)",10-15,57,0.8341835734541213,NA,NA,0.8314752398236974,NA,NA,NA
+RISK,risk_valence_asymmetry_samp10k,by_age,a4,"Learning Rate (unchosen, -PE)",15-20,45,0.8282250492146203,NA,NA,0.804216073781291,NA,NA,NA
+RISK,risk_valence_asymmetry_samp10k,by_age,a4,"Learning Rate (unchosen, -PE)",20-25,57,0.8176369699768721,NA,NA,0.7902122836754257,NA,NA,NA
+RISK,risk_valence_asymmetry_samp10k,by_age,b1,Inverse Temperature,10-15,57,0.693833219532935,NA,NA,0.6501814882032669,NA,NA,NA
+RISK,risk_valence_asymmetry_samp10k,by_age,b1,Inverse Temperature,15-20,45,0.7668431151577768,NA,NA,0.7710144927536231,NA,NA,NA
+RISK,risk_valence_asymmetry_samp10k,by_age,b1,Inverse Temperature,20-25,57,0.8736208906548675,NA,NA,0.8805561408360669,NA,NA,NA
+RISK,risk_valence_asymmetry_samp10k,by_age,q0,Initial Q-value (q0),10-15,57,0.79594486393583,NA,NA,0.7525724750222418,NA,NA,NA
+RISK,risk_valence_asymmetry_samp10k,by_age,q0,Initial Q-value (q0),15-20,45,0.8103254653573656,NA,NA,0.7587615283267455,NA,NA,NA
+RISK,risk_valence_asymmetry_samp10k,by_age,q0,Initial Q-value (q0),20-25,57,0.7030270633648258,NA,NA,0.6837568058076227,NA,NA,NA
+RISK,risk_valence_asymmetry_samp10k,age_moderation,a1,"Learning Rate (chosen, +PE)",NA,159,NA,NA,NA,NA,NA,1.7028706225055568,0.09059669145136044
+RISK,risk_valence_asymmetry_samp10k,age_moderation,a2,"Learning Rate (chosen, -PE)",NA,159,NA,NA,NA,NA,NA,-0.6844953079437477,0.49468465499288516
+RISK,risk_valence_asymmetry_samp10k,age_moderation,a3,"Learning Rate (unchosen, +PE)",NA,159,NA,NA,NA,NA,NA,-0.3239909410524487,0.7463816646897568
+RISK,risk_valence_asymmetry_samp10k,age_moderation,a4,"Learning Rate (unchosen, -PE)",NA,159,NA,NA,NA,NA,NA,0.9094249627569972,0.3645377994470623
+RISK,risk_valence_asymmetry_samp10k,age_moderation,b1,Inverse Temperature,NA,159,NA,NA,NA,NA,NA,0.8490305496972724,0.39717366802213594
+RISK,risk_valence_asymmetry_samp10k,age_moderation,q0,Initial Q-value (q0),NA,159,NA,NA,NA,NA,NA,-1.4146855683410242,0.15916644903143873

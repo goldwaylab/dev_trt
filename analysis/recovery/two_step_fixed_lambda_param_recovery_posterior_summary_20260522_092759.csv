@@ -1,0 +1,6 @@
+task,parameter,r_true_recovered,mean_bias,n_subjects,sampling_mode,true_param_sampling,coverage95_true_in_refit,coverage50_true_in_refit
+TwoStep_fixed_lambda,Learning Rate,0.9686112269347448,-0.004907079173333334,600,posterior,independent,0.9533333333333334,0.5133333333333333
+TwoStep_fixed_lambda,Model Based Beta,0.8099101373152469,-0.03180932674,600,posterior,independent,0.9216666666666666,0.44666666666666666
+TwoStep_fixed_lambda,Model Free Beta,0.8412889259864406,-0.017248484016666652,600,posterior,independent,0.9316666666666666,0.4766666666666667
+TwoStep_fixed_lambda,Stage2 Temperature,0.9223115402494108,-0.070067747,600,posterior,independent,0.9266666666666666,0.49166666666666664
+TwoStep_fixed_lambda,Stickiness,0.8593104351151089,-0.023511266631666666,600,posterior,independent,0.9333333333333333,0.48333333333333334

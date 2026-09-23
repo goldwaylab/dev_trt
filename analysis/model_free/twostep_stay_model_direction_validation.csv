@@ -1,0 +1,12 @@
+"validation","term","estimate","std_error","statistic","p_value","odds_ratio","direction","interpretation"
+"glmm_interaction_term","previous_reward1:previous_transition1:age_z",-0.0930907587492346,0.0375239553133419,-2.48083545489501,0.0131074864533277,0.911110805266448,"strengthens_with_age","With contr.sum coding, the reward x transition x age_z interaction strengthens (beta = -0.093, p = 0.0131); see emtrends MB-contrast slope for interpretable direction."
+"model_mb_contrast_slope_by_age_z","mb_contrast_trend",-0.429315340824955,0.157097386218419,-2.73279747778909,0.00627989332134477,0.650954624244002,"strengthens_with_age","emtrends MB-contrast slope over age_z = -0.429 (p = 0.00628); more negative = stronger reward x transition interaction with age"
+"subject_level_mb_vs_age_linear","age",0.00779719115849285,0.00380921651235391,2.046927795573,0.0425357621277648,NA,"increases_with_age","Subject-level MB contrast changes by 0.0078 per year of age (p = 0.0425)"
+"subject_level_mb_vs_age_spearman","age_vs_mb_spearman",0.1983577750365,NA,NA,0.0179631300278519,NA,"increases_with_age","Spearman rho = 0.198 (p = 0.018, n = 142)"
+"subject_level_mb_vs_age_group_ordinal","as.numeric(age_group)",0.0436547118792793,0.022365980651416,1.95183535922962,0.0529537229969675,NA,"increases_with_age","Ordinal age-group trend = 0.0437 per step Children->Adolescents->Adults (p = 0.053)"
+"subject_level_mb_by_age_group","Children",0.105929904079059,0.0242595663239248,34,NA,NA,NA,NA
+"subject_level_mb_by_age_group","Adolescents",0.168144850235817,0.0420347956021944,42,NA,NA,NA,NA
+"subject_level_mb_by_age_group","Adults",0.19667527203444,0.0254891770002665,66,NA,NA,NA,NA
+"model_predicted_mb_contrast_by_age_z","age_z=-1",-1.07319253242163,0.22083088902877,-4.85979356031944,1.17508220194053e-06,0.34191519776379,"negative_mb_contrast","predicted MB contrast at age_z=-1"
+"model_predicted_mb_contrast_by_age_z","age_z=0",-1.50250787324659,0.157688208533021,-9.52834639460031,1.5980839823495e-21,0.222571279083642,"negative_mb_contrast","predicted MB contrast at age_z=0"
+"model_predicted_mb_contrast_by_age_z","age_z=1",-1.93182321407155,0.22433019900314,-8.61151651741952,7.2100348720467e-18,0.144883803343399,"negative_mb_contrast","predicted MB contrast at age_z=1"

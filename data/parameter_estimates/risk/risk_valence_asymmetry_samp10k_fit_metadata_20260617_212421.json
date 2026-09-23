@@ -1,0 +1,18 @@
+{
+  "model": "risk_valence_asymmetry",
+  "stan_file": "risk_valence_asymmetry.stan",
+  "n_participants": 159,
+  "session": null,
+  "full_sample": false,
+  "behavior_s1_csv": "data/behavioral/risk/s1/data.csv",
+  "behavior_s2_csv": "data/behavioral/risk/s2/data.csv",
+  "n_trials": 79920,
+  "chains": 4,
+  "iter_warmup": 5000,
+  "iter_sampling": 10000,
+  "seed": 0,
+  "output_cohort_tag": "samp10k",
+  "summary_path": "risk_valence_asymmetry_samp10k_fit_summary_20260617_212421.tsv",
+  "draws_file_not_included": "risk_valence_asymmetry_samp10k_fit_draws_20260617_212421.tsv.gz",
+  "subjects_path": "risk_valence_asymmetry_samp10k_fit_subjects_20260617_212421.csv"
+}

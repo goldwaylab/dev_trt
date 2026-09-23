@@ -1,0 +1,13 @@
+{
+  "timestamp": "20260618_081745",
+  "output_tag": "samp10k",
+  "stan_model": "pit_pavlovian_bias.stan",
+  "n_participants": 155,
+  "n_trials": 74520,
+  "n_chains": 4,
+  "iter_warmup": 5000,
+  "iter_sampling": 10000,
+  "summary_path": "pit_pavlovian_bias_samp10k_fit_summary_20260618_081745.tsv",
+  "draws_file_not_included": "pit_pavlovian_bias_samp10k_fit_draws_20260618_081745.tsv.gz",
+  "subjects_path": "pit_pavlovian_bias_samp10k_fit_subjects_20260618_081745.csv"
+}

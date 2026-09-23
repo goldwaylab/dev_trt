@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Double-or-Nothing Game</title>
+
+  <!-- Load libraries -->
+  <script src="./static/lib/jquery-3.3.1/jquery.min.js"></script>
+  <script src="./static/lib/jspsych-6.3.1/jspsych.js"></script> 
+
+
+
+  <!-- Load NivTurk plug-ins -->
+  <script src="./static/js/nivturk-plugins.js" type="text/javascript"></script>
+
+  <!-- Load expeirment -->
+  <script src="./static/js/mrst-experiment.js"></script>
+  <script src="./static/js/mrst-instructions.js"></script>
+
+  <!-- Load jsPsych plug-ins -->
+  <script src="./static/js/jspsych-mrst-trial.js"></script>
+  <script src="./static/js/jspsych-mrst-instructions.js"></script>
+  <script src="./static/js/jspsych-mrst-comprehension.js"></script>
+  <script src="./static/js/jspsych-screen-check.js" type="text/javascript"></script>
+  <script src="./static/js/jspsych-survey-demo.js" type="text/javascript"></script>
+  <script src="./static/js/jspsych-survey-debrief.js" type="text/javascript"></script>
+  <script src="./static/lib/jspsych-6.3.1/plugins/jspsych-call-function.js"></script>
+  <script src="./static/lib/jspsych-6.3.1/plugins/jspsych-preload.js"></script>
+  <script src="./static/lib/jspsych-6.3.1/plugins/jspsych-fullscreen.js"></script>
+  <script src="./static/lib/jspsych-6.3.1/plugins/jspsych-audio-keyboard-response.js"></script>
+  <script src="./static/lib/jspsych-6.3.1/plugins/jspsych-audio-button-response.js"></script>
+
+
+  
+
+
+
+
+  <!-- Load CSS styles -->
+  <link href="./static/lib/jspsych-6.3.1/css/jspsych.css" rel="stylesheet" type="text/css"></link>
+  <link href="./static/css/mrst-css.min.css" rel="stylesheet" type="text/css"></link>
+
+<!-- pavlovia links -->
+	<script type="text/javascript" src="lib/jspsych-pavlovia-3.0.0.js"></script>
+	<script src="lib/vendors/jquery-2.2.0.min.js"></script>
+
+
+
+
+
+
+
+</head>
+<body></body>
+<script>
+
+  // Display alert message on back/refresh.
+  // https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onbeforeunload
+  function verify_unload(e){
+    e.preventDefault();
+    (e || window.event).returnValue = null;
+    pass_message('attempted page close')
+    return null;
+  };
+  window.addEventListener("beforeunload", verify_unload);
+
+  // Add version metadata.
+  jsPsych.data.addProperties({
+    task_version: 'risk-v0.6',
+  });
+
+  // Define global variables.
+  var low_quality = false;
+  
+  
+
+  // Define image preloading.
+  var PRELOAD = {
+    type: 'preload',
+    images: [stimuli],
+    message: 'Loading images. This may take a moment depending on your internet connection.',
+    error_message: '<p>The experiment failed to load. Please try restarting your browser.</p><p>If this error persists after 3-4 restarts, please contact the experimenter.</p>',
+    continue_after_error: false,
+    show_progress_bar: true,
+    max_load_time: 30000
+  }
+
+  // Define experiment fullscreen.
+  var FULLSCREEN = {
+    type: 'fullscreen',
+    fullscreen_mode: true
+  }
+
+  // Define demographics / debriefing forms.
+  var DEMO = {type: 'survey-demo'}
+  var DEBRIEF = {type: 'survey-debrief'}
+
+
+// Define timeline.
+//  var timeline = [];
+
+  /** GET SUB ID BASED ON URL **/
+  var urlvar = jsPsych.data.urlVariables();
+//console.log(urlvar)
+//console.log(urlvar.sb)
+//console.log(urlvar.age)
+//console.log(urlvar.participant_ID)
+//console.log(urlvar.order)
+//console.log(urlvar.STUDY_ID)
+ 
+
+// var session_end_link = ''
+
+//console.log(session_end_link)
+
+
+  
+
+
+
+
+
+
+  /** determine where to redirect based on version **/
+    
+    /** to spark**/
+  
+   var redirect_link = 'subject_ID=' + urlvar.sb + '&participant_ID=' + urlvar.participant_ID 
+  + '&age='+ urlvar.age+'&gender='+ urlvar.gender
+
+
+console.log(redirect_link)
+
+
+  var pavlovia_init = {
+    type: "pavlovia",
+    command: "init"
+  };
+
+
+  // Initialize timeline.
+  var timeline = [];
+  // timeline.push(pavlovia_init);
+  timeline = timeline.concat(pavlovia_init);
+  timeline = timeline.concat(PRELOAD);
+  timeline = timeline.concat(FULLSCREEN);
+ timeline = timeline.concat(INSTRUCTIONS);
+  timeline = timeline.concat(READY_01);
+  timeline = timeline.concat(MRST.slice(0, 144));
+  timeline = timeline.concat(READY_02);
+  timeline = timeline.concat(MRST.slice(144, 240));
+ //timeline = timeline.concat(MRST.slice(234, 240));
+  timeline = timeline.concat(FINISHED);
+  //timeline = timeline.concat(pavlovia_finish);
+
+ // timeline = timeline.concat(DEMO);
+  //timeline = timeline.concat(DEBRIEF);
+
+
+  /* finish connection with pavlovia.org */
+  var pavlovia_finish = {
+    type: "pavlovia",
+    command: "finish"
+    };
+ timeline.push(pavlovia_finish);
+ 
+ // var urlvar = jsPsych.data.urlVariables();
+
+
+  jsPsych.init({
+    timeline: timeline,
+    show_progress_bar: true,
+    on_trial_start: function (data) {
+      jsPsych.data.get().addToAll({ subject_id: urlvar.subject_ID })
+      var interaction_data = jsPsych.data.getInteractionData();
+      var blur_events = interaction_data.filter({ event: 'blur' });
+      var focus_events = interaction_data.filter({ event: 'focus' });
+      var fullscreenenter_events = interaction_data.filter({ event: 'fullscreenenter' });
+      var fullscreenexit_events = interaction_data.filter({ event: 'fullscreenexit' });
+      jsPsych.data.get().addToLast({ interactions: interaction_data.csv() });
+      jsPsych.data.get().addToLast({ blur_events: blur_events.csv() });
+      jsPsych.data.get().addToLast({ focus_events: focus_events.csv() });
+      jsPsych.data.get().addToLast({ fullscreenenter_events: fullscreenenter_events.csv() });
+      jsPsych.data.get().addToLast({ fullscreenexit_events: fullscreenexit_events.csv() });
+    },
+    on_interaction_data_update: function (data) {
+      var interaction_data = jsPsych.data.getInteractionData();
+      var blur_events = interaction_data.filter({ event: 'blur' });
+      var focus_events = interaction_data.filter({ event: 'focus' });
+      var fullscreenenter_events = interaction_data.filter({ event: 'fullscreenenter' });
+      var fullscreenexit_events = interaction_data.filter({ event: 'fullscreenexit' });
+      jsPsych.data.get().addToLast({ interactions: interaction_data.csv() });
+      jsPsych.data.get().addToLast({ blur_events: blur_events.csv() });
+      jsPsych.data.get().addToLast({ focus_events: focus_events.csv() });
+      jsPsych.data.get().addToLast({ fullscreenenter_events: fullscreenenter_events.csv() });
+      jsPsych.data.get().addToLast({ fullscreenexit_events: fullscreenexit_events.csv() });
+    },
+
+
+    on_finish: function() {
+        console.log('done!');
+        document.body.innerHTML = '<p> <center> This is the end of the Double or Nothing task.  You will be directed to a survey in a few seconds.  When the pop message appears, click LEAVE </center> </p>'
+         setTimeout(function (){ location.href = redirect_link},10000)
+        //window.alert("That is the end of the double or nothing task!\n Please wait a few seconds before closing the window to make sure your data saves properly. \n\nAnother alert will let you know when it is safe to quit.");
+        //window.setTimeout(function(){
+        // window.alert("Please close this window and go back to the survey to complete the session.");
+        
+  }
+  });
+  
+
+
+
+
+      
+
+
+
+
+  //ORIGINAL ON FINISH
+
+      // Remove requirement to verify redirect
+   //   window.removeEventListener("beforeunload", verify_unload);
+
+      // Add interactions to the data variable
+    //  var interaction_data = jsPsych.data.getInteractionData();
+      //jsPsych.data.get().addToLast({interactions: interaction_data.json()});
+
+      // Display jsPsych data in viewport.
+      
+      //jsPsych.data.displayData();
+
+     // if (low_quality) {
+
+        // Save rejected dataset to disk.
+       // redirect_reject("{{workerId}}", "{{assignmentId}}", "{{hitId}}", "{{code_reject}}");
+
+//} else {
+
+        // Save complete dataset to disk.
+     //   redirect_success("{{workerId}}", "{{assignmentId}}", "{{hitId}}", "{{code_success}}");
+
+      //}
+
+</script>
+</html>

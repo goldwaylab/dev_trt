@@ -1,0 +1,31 @@
+task,model,metric_type,parameter,parameter_label,age_group,n,pearson_r,pearson_ci_lo,pearson_ci_hi,spearman_rho,spearman_p,interaction_t,interaction_p
+PIT,pit_pavlovian_bias_samp10k,overall,a1,Positive Learning Rate,NA,155,0.9507527092057818,0.9329373027632883,0.9639237307868722,0.9307004717079159,1.0296732020210475e-68,NA,NA
+PIT,pit_pavlovian_bias_samp10k,overall,a2,Negative Learning Rate,NA,155,0.9422988443501714,0.9215482080055568,0.957681775946881,0.903041079181787,5.0616791389369826e-58,NA,NA
+PIT,pit_pavlovian_bias_samp10k,overall,b1,Reward Sensitivity,NA,155,0.8344929022836949,0.7793765940609436,0.8767934112297039,0.8139132060098961,6.520676231286212e-38,NA,NA
+PIT,pit_pavlovian_bias_samp10k,overall,b2,Punishment Sensitivity,NA,155,0.7532080652026159,0.675806378388239,0.8141791081017143,0.7110077366994807,3.5965214727760833e-25,NA,NA
+PIT,pit_pavlovian_bias_samp10k,overall,b3,Approach Bias,NA,155,0.734589645087048,0.6525060184814714,0.7996347677605715,0.6679632237543869,2.2321776671499834e-21,NA,NA
+PIT,pit_pavlovian_bias_samp10k,overall,b4,Avoidance Bias,NA,155,0.7023431156565604,0.6125144065843738,0.7742625593102581,0.5700009667751603,9.86220431158321e-15,NA,NA
+PIT,pit_pavlovian_bias_samp10k,by_age,a1,Positive Learning Rate,10-15,55,0.954611245202899,NA,NA,0.947816519211174,NA,NA,NA
+PIT,pit_pavlovian_bias_samp10k,by_age,a1,Positive Learning Rate,15-20,47,0.9621497881023718,NA,NA,0.8574236817761332,NA,NA,NA
+PIT,pit_pavlovian_bias_samp10k,by_age,a1,Positive Learning Rate,20-25,51,0.9381830990635907,NA,NA,0.9382805429864253,NA,NA,NA
+PIT,pit_pavlovian_bias_samp10k,by_age,a2,Negative Learning Rate,10-15,55,0.931108027083671,NA,NA,0.9407647907647907,NA,NA,NA
+PIT,pit_pavlovian_bias_samp10k,by_age,a2,Negative Learning Rate,15-20,47,0.9426145347888811,NA,NA,0.9054378310279485,NA,NA,NA
+PIT,pit_pavlovian_bias_samp10k,by_age,a2,Negative Learning Rate,20-25,51,0.9443927522851018,NA,NA,0.8666063348416289,NA,NA,NA
+PIT,pit_pavlovian_bias_samp10k,by_age,b1,Reward Sensitivity,10-15,55,0.7695783781769803,NA,NA,0.6927128427128427,NA,NA,NA
+PIT,pit_pavlovian_bias_samp10k,by_age,b1,Reward Sensitivity,15-20,47,0.8521242323045467,NA,NA,0.8517576318223866,NA,NA,NA
+PIT,pit_pavlovian_bias_samp10k,by_age,b1,Reward Sensitivity,20-25,51,0.8579383424196526,NA,NA,0.832760180995475,NA,NA,NA
+PIT,pit_pavlovian_bias_samp10k,by_age,b2,Punishment Sensitivity,10-15,55,0.8034982614862182,NA,NA,0.6831890331890331,NA,NA,NA
+PIT,pit_pavlovian_bias_samp10k,by_age,b2,Punishment Sensitivity,15-20,47,0.6164861966411068,NA,NA,0.5943336224342296,NA,NA,NA
+PIT,pit_pavlovian_bias_samp10k,by_age,b2,Punishment Sensitivity,20-25,51,0.791719291781237,NA,NA,0.7720989164626879,NA,NA,NA
+PIT,pit_pavlovian_bias_samp10k,by_age,b3,Approach Bias,10-15,55,0.7819817986519874,NA,NA,0.7384559884559884,NA,NA,NA
+PIT,pit_pavlovian_bias_samp10k,by_age,b3,Approach Bias,15-20,47,0.8014496689956403,NA,NA,0.5963228492136909,NA,NA,NA
+PIT,pit_pavlovian_bias_samp10k,by_age,b3,Approach Bias,20-25,51,0.6818049714900711,NA,NA,0.6412362272280814,NA,NA,NA
+PIT,pit_pavlovian_bias_samp10k,by_age,b4,Avoidance Bias,10-15,55,0.7629075639217376,NA,NA,0.5756854256854257,NA,NA,NA
+PIT,pit_pavlovian_bias_samp10k,by_age,b4,Avoidance Bias,15-20,47,0.7520793206823577,NA,NA,0.6008325624421832,NA,NA,NA
+PIT,pit_pavlovian_bias_samp10k,by_age,b4,Avoidance Bias,20-25,51,0.5635980238505818,NA,NA,0.49475113122171943,NA,NA,NA
+PIT,pit_pavlovian_bias_samp10k,age_moderation,a1,Positive Learning Rate,NA,155,NA,NA,NA,NA,NA,-1.688125475183362,0.09345142368315977
+PIT,pit_pavlovian_bias_samp10k,age_moderation,a2,Negative Learning Rate,NA,155,NA,NA,NA,NA,NA,-0.042940101052067726,0.9658060108889326
+PIT,pit_pavlovian_bias_samp10k,age_moderation,b1,Reward Sensitivity,NA,155,NA,NA,NA,NA,NA,0.3067367480649139,0.7594663281775629
+PIT,pit_pavlovian_bias_samp10k,age_moderation,b2,Punishment Sensitivity,NA,155,NA,NA,NA,NA,NA,0.09671729016080922,0.9230791578497592
+PIT,pit_pavlovian_bias_samp10k,age_moderation,b3,Approach Bias,NA,155,NA,NA,NA,NA,NA,-1.2494153866472213,0.21344639687780315
+PIT,pit_pavlovian_bias_samp10k,age_moderation,b4,Avoidance Bias,NA,155,NA,NA,NA,NA,NA,-1.9059197996054704,0.058560774432502634

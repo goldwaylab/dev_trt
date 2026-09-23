@@ -1,0 +1,30 @@
+.DS_Store
+.Rhistory
+.RData
+.Rproj.user/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mplconfig/
+
+# Generated local outputs
+outputs/figures/*
+!outputs/figures/.gitkeep
+analysis/manuscript/manuscript_verification_report.csv
+analysis/manuscript/manuscript_verification_report.txt
+analysis/model_free/*.rds
+data/parameter_estimates/**/*_dotplot_values.csv
+
+# Large optional Tier B Stan outputs
+data/parameter_estimates/**/*.tsv.gz
+data/parameter_estimates/**/*_draws_*
+
+# Raw exports and local task run data must not enter this clean repo.
+data/raw/
+tasks/pavlovia/**/data/
+tasks/pavlovia/**/venv/
+tasks/pavlovia/**/.venv/
+
+# Local task-code build/sanitization staging.
+tasks/pavlovia/_staging/
+tasks/pavlovia/source/crcns_tp0_*/

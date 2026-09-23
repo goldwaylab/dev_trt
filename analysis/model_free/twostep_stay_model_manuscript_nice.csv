@@ -1,0 +1,16 @@
+Effect,df,Chisq,p.value
+previous_reward,1,58.20,<.001
+previous_transition,1,6.03,.014
+age_z,1,5.92,.015
+session,1,40.11,<.001
+previous_reward:previous_transition,1,61.91,<.001
+previous_reward:age_z,1,12.87,<.001
+previous_transition:age_z,1,0.86,.353
+previous_reward:session,1,2.26,.133
+previous_transition:session,1,0.81,.368
+age_z:session,1,14.62,<.001
+previous_reward:previous_transition:age_z,1,6.67,.010
+previous_reward:previous_transition:session,1,0.61,.436
+previous_reward:age_z:session,1,4.04,.044
+previous_transition:age_z:session,1,0.21,.646
+previous_reward:previous_transition:age_z:session,1,1.53,.217

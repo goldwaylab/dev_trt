@@ -1,0 +1,9 @@
+{
+  "sampling_mode": "posterior",
+  "true_param_sampling": "independent",
+  "shared_source_draw_idx": null,
+  "n_subjects": 500,
+  "draws_file": "pit_pavlovian_bias_fit_draws_20260408_153407.tsv.gz",
+  "summary_file": "pit_param_recovery_indep_summary_posterior_20260520_232453.csv",
+  "subject_level_file": "pit_param_recovery_indep_subject_level_posterior_20260520_232453.csv"
+}

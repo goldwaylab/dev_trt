@@ -1,0 +1,26 @@
+task,model,metric_type,parameter,parameter_label,age_group,n,pearson_r,pearson_ci_lo,pearson_ci_hi,spearman_rho,spearman_p,interaction_t,interaction_p
+TwoStep,two_step_fixed_lambda_samp10k,overall,alpha1,Learning Rate,NA,130,0.8513172778806557,0.7957806949912175,0.8926537276945479,0.839877644102746,8.980590753943493e-36,NA,NA
+TwoStep,two_step_fixed_lambda_samp10k,overall,beta1m,Model-Based Beta,NA,130,0.9609749724030949,0.9451854287291086,0.9722810909854367,0.9813092407767312,1.756393804052366e-93,NA,NA
+TwoStep,two_step_fixed_lambda_samp10k,overall,beta1t,Model-Free Beta,NA,130,0.8513304371669879,0.7957982274256854,0.892663440579684,0.8620336015805123,1.3661834239078758e-39,NA,NA
+TwoStep,two_step_fixed_lambda_samp10k,overall,beta2,Stage-2 Temperature,NA,130,0.6844000145140039,0.5806388181972412,0.7662840085264018,0.6568308413760803,2.1481573293924902e-17,NA,NA
+TwoStep,two_step_fixed_lambda_samp10k,overall,betac,Stickiness,NA,130,0.35742631315817625,0.19738825159396067,0.49890770937992607,0.764921403772975,3.232908534594396e-26,NA,NA
+TwoStep,two_step_fixed_lambda_samp10k,by_age,alpha1,Learning Rate,10-15,51,0.863816684059888,NA,NA,0.8284162895927601,NA,NA,NA
+TwoStep,two_step_fixed_lambda_samp10k,by_age,alpha1,Learning Rate,15-20,35,0.8141975250492264,NA,NA,0.7907563025210085,NA,NA,NA
+TwoStep,two_step_fixed_lambda_samp10k,by_age,alpha1,Learning Rate,20-25,44,0.8495435932407492,NA,NA,0.7837914023960536,NA,NA,NA
+TwoStep,two_step_fixed_lambda_samp10k,by_age,beta1m,Model-Based Beta,10-15,51,0.9517454051371278,NA,NA,0.9821036677551532,NA,NA,NA
+TwoStep,two_step_fixed_lambda_samp10k,by_age,beta1m,Model-Based Beta,15-20,35,0.9815898839844347,NA,NA,0.9882352941176472,NA,NA,NA
+TwoStep,two_step_fixed_lambda_samp10k,by_age,beta1m,Model-Based Beta,20-25,44,0.9518286488091688,NA,NA,0.9726568005637773,NA,NA,NA
+TwoStep,two_step_fixed_lambda_samp10k,by_age,beta1t,Model-Free Beta,10-15,51,0.8841025867153163,NA,NA,0.885339366515837,NA,NA,NA
+TwoStep,two_step_fixed_lambda_samp10k,by_age,beta1t,Model-Free Beta,15-20,35,0.8413223783603148,NA,NA,0.8381539344036124,NA,NA,NA
+TwoStep,two_step_fixed_lambda_samp10k,by_age,beta1t,Model-Free Beta,20-25,44,0.8007344231439928,NA,NA,0.8125726774839297,NA,NA,NA
+TwoStep,two_step_fixed_lambda_samp10k,by_age,beta2,Stage-2 Temperature,10-15,51,0.7345768066553122,NA,NA,0.6704072398190044,NA,NA,NA
+TwoStep,two_step_fixed_lambda_samp10k,by_age,beta2,Stage-2 Temperature,15-20,35,0.5343151118240785,NA,NA,0.6202115009256678,NA,NA,NA
+TwoStep,two_step_fixed_lambda_samp10k,by_age,beta2,Stage-2 Temperature,20-25,44,0.6308419869137463,NA,NA,0.6424242424242425,NA,NA,NA
+TwoStep,two_step_fixed_lambda_samp10k,by_age,betac,Stickiness,10-15,51,0.3309140074830678,NA,NA,0.8133031674208144,NA,NA,NA
+TwoStep,two_step_fixed_lambda_samp10k,by_age,betac,Stickiness,15-20,35,0.4003117684655629,NA,NA,0.6854341736694679,NA,NA,NA
+TwoStep,two_step_fixed_lambda_samp10k,by_age,betac,Stickiness,20-25,44,0.42044306318668406,NA,NA,0.7217758985200845,NA,NA,NA
+TwoStep,two_step_fixed_lambda_samp10k,age_moderation,alpha1,Learning Rate,NA,130,NA,NA,NA,NA,NA,-0.061023963719336556,0.9514368137986894
+TwoStep,two_step_fixed_lambda_samp10k,age_moderation,beta1m,Model-Based Beta,NA,130,NA,NA,NA,NA,NA,-1.0073526323065587,0.3156959538543887
+TwoStep,two_step_fixed_lambda_samp10k,age_moderation,beta1t,Model-Free Beta,NA,130,NA,NA,NA,NA,NA,-0.09690343564491405,0.9229570484762266
+TwoStep,two_step_fixed_lambda_samp10k,age_moderation,beta2,Stage-2 Temperature,NA,130,NA,NA,NA,NA,NA,-1.3071485914426373,0.1935426796040552
+TwoStep,two_step_fixed_lambda_samp10k,age_moderation,betac,Stickiness,NA,130,NA,NA,NA,NA,NA,1.2320757722396543,0.22021505536715152

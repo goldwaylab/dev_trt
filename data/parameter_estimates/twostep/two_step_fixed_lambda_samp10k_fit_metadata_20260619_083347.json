@@ -1,0 +1,14 @@
+{
+  "model": "two_step_fixed_lambda.stan",
+  "output_tag": "samp10k",
+  "n_participants": 141,
+  "n_trials": 54141,
+  "n_chains": 4,
+  "iter_warmup": 5000,
+  "iter_sampling": 10000,
+  "adapt_delta": 0.9,
+  "max_treedepth": 12,
+  "timestamp": "20260619_083347",
+  "summary_path": "two_step_fixed_lambda_samp10k_fit_summary_20260619_083347.tsv",
+  "draws_file_not_included": "two_step_fixed_lambda_samp10k_fit_draws_20260619_083347.tsv.gz"
+}

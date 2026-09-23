@@ -1,0 +1,7 @@
+task,parameter,r_true_recovered,mean_bias,coverage95_true_in_refit,coverage50_true_in_refit,n_subjects,sampling_mode,true_param_sampling
+PIT,Reward Sensitivity,0.8837232603901516,0.006900901385999998,0.924,0.442,500,posterior,independent
+PIT,Punishment Sensitivity,0.8349629852954518,-1.2366959638200001,0.934,0.446,500,posterior,independent
+PIT,Approach Bias,0.9222076704995134,0.009215035538000007,0.944,0.468,500,posterior,independent
+PIT,Avoidance Bias,0.9362576680283895,-0.022095658871100002,0.95,0.52,500,posterior,independent
+PIT,Positive Learning Rate,0.8553412536338469,0.0031839955980000004,0.952,0.48,500,posterior,independent
+PIT,Negative Learning Rate,0.8692971857544167,0.006490235525999999,0.942,0.52,500,posterior,independent

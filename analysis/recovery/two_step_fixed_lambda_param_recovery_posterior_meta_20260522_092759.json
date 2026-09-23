@@ -1,0 +1,8 @@
+{
+  "sampling_mode": "posterior_merged",
+  "true_param_sampling": "independent",
+  "output_tag": "indep",
+  "n_subjects": 600,
+  "summary_file": "two_step_fixed_lambda_param_recovery_posterior_summary_20260522_092759.csv",
+  "subject_level_file": "two_step_fixed_lambda_param_recovery_posterior_subject_level_20260522_092759.csv"
+}

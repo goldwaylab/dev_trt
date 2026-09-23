@@ -1,0 +1,16 @@
+{
+  "model": "risk_valence_asymmetry",
+  "sampling_mode": "posterior",
+  "true_param_sampling": "independent",
+  "shared_source_draw_idx": null,
+  "session_filter": null,
+  "full_sample_draws_glob": false,
+  "n_subjects": 500,
+  "seed_sampling": 123,
+  "seed_simulation": 456,
+  "draws_file": "risk_valence_asymmetry_fit_draws_20260421_141321.tsv.gz",
+  "draws_file_not_included": "risk_valence_asymmetry_fit_draws_20260421_141321.tsv.gz",
+  "summary_file": "risk_valence_asymmetry_param_recovery_posterior_summary_20260520_123145.csv",
+  "subject_level_file": "risk_valence_asymmetry_param_recovery_posterior_subject_level_20260520_123145.csv",
+  "output_tag": "indep_pooled_trt"
+}
